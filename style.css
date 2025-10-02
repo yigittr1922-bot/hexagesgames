@@ -40,7 +40,7 @@ header .logo {
 
 header .logo img {
   width: 60px;
-  filter: drop-shadow(0 0 10px #fff);
+  filter: drop-shadow(0 0 7px #fff); /* Glow kısaldı */
 }
 
 header .logo span {
@@ -50,6 +50,7 @@ header .logo span {
   background: linear-gradient(90deg, #fff, #ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px rgba(255,255,255,0.2); /* Glow kısaldı */
 }
 
 header nav ul {
@@ -259,9 +260,9 @@ footer {
 
 .footer-top {
   display: flex;
-  justify-content: center; /* ortaladık */
+  justify-content: center;
   align-items: flex-start;
-  gap: 80px; /* biraz aralık verdik */
+  gap: 80px;
   flex-wrap: wrap;
 }
 
@@ -272,37 +273,38 @@ footer {
 }
 
 .footer-logo img {
-  width: 70px; /* büyüttük */
+  width: 70px;
   height: auto;
-  filter: drop-shadow(0 0 15px #fff);
+  filter: drop-shadow(0 0 7px #fff); /* glow azaltıldı */
 }
 
 .footer-logo span {
-  font-size: 1.7rem; /* büyüttük */
+  font-size: 1.7rem;
   font-weight: 800;
   letter-spacing: 1.5px;
   background: linear-gradient(90deg, #fff, #ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px rgba(255,255,255,0.2); /* glow azaltıldı */
 }
 
 .footer-right {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  justify-content: center; /* ortaya hizaladık */
+  justify-content: center;
   align-items: flex-start;
 }
 
 .footer-right h4 {
-  font-size: 1.6rem; /* biraz büyüttük */
+  font-size: 1.6rem;
   margin-bottom: 12px;
   color: #fff;
   text-shadow: 0 0 15px rgba(255,255,255,0.3);
 }
 
 .footer-right p {
-  font-size: 1.15rem; /* büyüttük */
+  font-size: 1.15rem;
   color: #ccc;
 }
 
@@ -315,11 +317,10 @@ footer {
 
 .footer-bottom {
   text-align: center;
-  font-size: 1rem; /* büyüttük */
+  font-size: 1rem;
   color: #888;
   margin-top: 10px;
 }
-
 
 /* ========================
    ANIMATIONS
@@ -365,5 +366,34 @@ footer {
 
   .hero-content .subtitle {
     font-size: 1.3rem;
+  }
+
+  .hero-content .btn {
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content .subtitle {
+    font-size: 1rem;
+  }
+  .hero-content .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .footer-logo span {
+    font-size: 1.4rem;
+  }
+
+  .footer-right h4 {
+    font-size: 1.3rem;
+  }
+
+  .footer-right p {
+    font-size: 1rem;
   }
 }
