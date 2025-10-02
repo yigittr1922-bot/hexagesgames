@@ -1,0 +1,112 @@
+/* GENEL STİL */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  max-width: 100%;
+  overflow-x: hidden; /* taşmayı engeller */
+}
+
+/* ÜST BANNER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ff4500;
+}
+
+/* VİDEO ARKA PLAN */
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.video-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+  z-index: -1;
+}
+
+/* VİDEO ÜZERİNDE YAZI */
+.hero-text {
+  position: relative;
+  top: 40%;
+  text-align: center;
+  color: white;
+}
+.hero-text h1 {
+  font-size: 60px;
+  margin: 0;
+}
+.hero-text p {
+  font-size: 20px;
+  margin: 10px 0 20px;
+}
+.hero-text button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.hero-text button:hover {
+  background: #ff4500;
+  color: white;
+  box-shadow: 0 0 10px #ff4500;
+}
+
+/* YENİ TRAILER BÖLÜMÜ */
+.trailer-section {
+  display: flex;
+  flex-wrap: wrap; /* küçük ekranlarda alta geçsin */
+  background: #111
