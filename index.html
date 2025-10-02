@@ -1,1 +1,99 @@
-<!DOCTYPE html> <html lang="tr"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>HEXAGES GAMES</title> <link rel="stylesheet" href="style.css"> </head> <body> <!-- NAVBAR --> <header> <div class="logo"> <img src="images/logo.png" alt="HEXAGES Logo"> <span>HEXAGES GAMES</span> </div> <nav> <ul class="nav-links"> <li><a href="index.html">Home</a></li> <li><a href="games.html">Games</a></li> <li><a href="about.html">About</a></li> <li><a href="haberler.html">Haberler</a></li> <li><a href="iletisim.html">İletişim</a></li> </ul> <div class="hamburger"> <span></span> <span></span> <span></span> </div> </nav> </header> <!-- HERO AREA --> <section class="hero"> <video autoplay muted loop playsinline class="bg-video"> <source src="images/background.mp4" type="video/mp4"> </video> <div class="overlay"></div> <div class="hero-content"> <h1>HEXAGES GAMES</h1> <p class="subtitle">On the trail of the great wolf</p> <a href="games.html" class="btn">Oyunlarımız</a> </div> </section> <!-- FRAGMAN & TANITIM --> <section class="trailer"> <div class="trailer-left"> <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="Oyun Fragmanı" frameborder="0" allowfullscreen></iframe> </div> <div class="trailer-right"> <h2>HELF SYSTEM</h2> <p class="game-desc">Buraya oyun hakkında açıklaman gelecek knk. Detaylı yazı için sana yer ayırdım.</p> </div> </section> <!-- PROFIL ALANI --> <section class="about"> <img src="images/yt.png" alt="Profil Logo"> <div> <h3>HEXAGES</h3> <p>Buraya kısa açıklamanı yazabilirsin. Oyun stüdyosu hakkında bilgi, vizyon falan.</p> </div> </section> <!-- FOOTER --> <footer> <div class="footer-top"> <div class="footer-logo"> <img src="images/fotos.png" alt="HEXAGES Logo"> <span>HEXAGES GAMES</span> </div> <div class="footer-right"> <h4>İletişim</h4> <p>📧 hexagesgames@gmail.com</p> <p>📷 Instagram: hexagesgames</p> <p>🐦 X: hexages_games</p> </div> </div> <div class="footer-divider"></div> <div class="footer-bottom"> © 2025 HEXAGES GAMES - Tüm Hakları Saklıdır </div> </footer> <!-- HAMBURGER JS --> <script> const hamburger = document.querySelector('.hamburger'); const navLinks = document.querySelector('.nav-links'); hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); hamburger.classList.toggle('toggle'); }); </script> </body> </html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HEXAGES GAMES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="HEXAGES Logo">
+      <span>HEXAGES GAMES</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="haberler.html">Haberler</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO AREA -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="images/background.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>HEXAGES GAMES</h1>
+      <p class="subtitle">On the trail of the great wolf</p>
+      <a href="games.html" class="btn">Oyunlarımız</a>
+    </div>
+  </section>
+
+  <!-- FRAGMAN & TANITIM -->
+  <section class="trailer">
+    <div class="trailer-left">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID"
+        title="Oyun Fragmanı" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="trailer-right">
+      <h2>HELF SYSTEM</h2>
+      <p class="game-desc">Buraya oyun hakkında açıklaman gelecek knk. Detaylı yazı için sana yer ayırdım.</p>
+    </div>
+  </section>
+
+  <!-- PROFIL ALANI -->
+  <section class="about">
+    <img src="images/yt.png" alt="Profil Logo">
+    <div>
+      <h3>HEXAGES</h3>
+      <p>Buraya kısa açıklamanı yazabilirsin. Oyun stüdyosu hakkında bilgi, vizyon falan.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="images/fotos.png" alt="HEXAGES Logo">
+        <span>HEXAGES GAMES</span>
+      </div>
+      <div class="footer-right">
+        <h4>İletişim</h4>
+        <p>📧 hexagesgames@gmail.com</p>
+        <p>📷 Instagram: hexagesgames</p>
+        <p>🐦 X: hexages_games</p>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      © 2025 HEXAGES GAMES - Tüm Hakları Saklıdır
+    </div>
+  </footer>
+
+  <!-- HAMBURGER JS -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('toggle');
+    });
+  </script>
+
+</body>
+</html>
