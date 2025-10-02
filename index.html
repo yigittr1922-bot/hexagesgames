@@ -15,13 +15,18 @@
       <span>HEXAGES GAMES</span>
     </div>
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="games.html">Games</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="haberler.html">Haberler</a></li>
         <li><a href="iletisim.html">İletişim</a></li>
       </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   </header>
 
@@ -72,13 +77,23 @@
         <p>📷 Instagram: hexagesgames</p>
         <p>🐦 X: hexages_games</p>
       </div>
-
     </div>
     <div class="footer-divider"></div>
     <div class="footer-bottom">
       © 2025 HEXAGES GAMES - Tüm Hakları Saklıdır
     </div>
   </footer>
+
+  <!-- HAMBURGER JS -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('toggle');
+    });
+  </script>
 
 </body>
 </html>
