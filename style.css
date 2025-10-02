@@ -9,9 +9,10 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #000; /* full siyah */
   color: #fff;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* ========================
@@ -23,10 +24,10 @@ header {
   align-items: center;
   padding: 20px 50px;
   background-color: #000;
-  border-bottom: 1px solid #222;
   position: fixed;
   width: 100%;
   z-index: 1000;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
 }
 
 header .logo {
@@ -38,12 +39,16 @@ header .logo {
 header .logo img {
   width: 60px;
   height: auto;
+  filter: drop-shadow(0 0 5px #fff);
 }
 
 header .logo span {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1px;
+  background: linear-gradient(90deg, #fff, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header nav ul {
@@ -57,11 +62,22 @@ header nav ul li a {
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
+  position: relative;
+}
+
+header nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #fff, #ccc);
   transition: 0.3s;
 }
 
-header nav ul li a:hover {
-  color: #ff6600;
+header nav ul li a:hover::after {
+  width: 100%;
 }
 
 /* ========================
@@ -84,6 +100,7 @@ header nav ul li a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(0.3);
 }
 
 .overlay {
@@ -92,7 +109,7 @@ header nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.7);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(0,0,0,0.8));
 }
 
 .hero-content {
@@ -107,6 +124,10 @@ header nav ul li a:hover {
   font-weight: 800;
   margin-bottom: 20px;
   letter-spacing: 2px;
+  background: linear-gradient(90deg, #fff, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
 .hero-content .subtitle {
@@ -117,18 +138,19 @@ header nav ul li a:hover {
 
 .hero-content .btn {
   padding: 15px 35px;
-  background-color: #ff6600;
-  color: #fff;
+  background: linear-gradient(90deg, #fff, #ccc);
+  color: #000;
   text-decoration: none;
   font-weight: 600;
   border-radius: 8px;
   font-size: 1rem;
   transition: 0.3s;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
 }
 
 .hero-content .btn:hover {
-  background-color: #e65c00;
   transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,255,255,0.4);
 }
 
 /* ========================
@@ -152,11 +174,15 @@ header nav ul li a:hover {
 .trailer-left iframe {
   border-radius: 10px;
   border: none;
+  filter: drop-shadow(0 0 10px #fff);
 }
 
 .trailer-right h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  background: linear-gradient(90deg, #fff, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .trailer-right .game-desc {
@@ -181,12 +207,16 @@ header nav ul li a:hover {
   width: 220px;
   height: auto;
   border-radius: 15px;
-  border: 2px solid #222;
+  border: 2px solid rgba(255,255,255,0.1);
+  filter: drop-shadow(0 0 10px #fff);
 }
 
 .about h3 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  background: linear-gradient(90deg, #fff, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about p {
@@ -220,12 +250,16 @@ footer {
 .footer-logo img {
   width: 50px;
   height: auto;
+  filter: drop-shadow(0 0 5px #fff);
 }
 
 .footer-logo span {
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 1px;
+  background: linear-gradient(90deg, #fff, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer-right {
@@ -235,9 +269,10 @@ footer {
 }
 
 .footer-right h4 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
   color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
 .footer-right p {
