@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HEXAGES GAMES | Oyunlar</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="games.css">
 </head>
 <body>
 
@@ -26,7 +26,7 @@
   </header>
 
   <!-- HERO BANNER -->
-  <section class="hero small-hero">
+  <section class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
       <h1>Oyunlarımız</h1>
@@ -36,6 +36,7 @@
 
   <!-- OYUNLAR -->
   <section class="games-list">
+    <!-- OYUN 1 -->
     <div class="game-card" onclick="toggleDetails(this)">
       <div class="game-header">
         <span class="status"><a href="news.html">Geliştirme Aşamasında</a></span>
@@ -50,6 +51,26 @@
           <p><strong>Yapımcı:</strong> HEXAGES Games</p>
           <p><strong>Konusu:</strong> Geleceğin savaş arenasında yapay zekaya karşı hayatta kal.</p>
           <p><strong>Güncel Durum:</strong> <span id="durum-hel">Devam Ediyor</span></p>
+          <p><strong>Oyun Linki:</strong> <a href="#">Yakında eklenecek</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OYUN 2 (örnek) -->
+    <div class="game-card" onclick="toggleDetails(this)">
+      <div class="game-header">
+        <span class="status"><a href="news.html">Yeni</a></span>
+        <h2>On the Trail of the Great Wolf</h2>
+      </div>
+      <img src="oyun2.jpg" alt="Great Wolf">
+      <div class="game-details">
+        <div class="game-left">
+          <img src="oyun2.jpg" alt="Wolf Küçük">
+        </div>
+        <div class="game-right">
+          <p><strong>Yapımcı:</strong> HEXAGES Games</p>
+          <p><strong>Konusu:</strong> Gizem ve macera dolu bir kurt avı.</p>
+          <p><strong>Güncel Durum:</strong> <span id="durum-wolf">Alpha</span></p>
           <p><strong>Oyun Linki:</strong> <a href="#">Yakında eklenecek</a></p>
         </div>
       </div>
