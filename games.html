@@ -18,112 +18,92 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="games.html" class="active">Games</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="news.html">Haberler</a></li>
-        <li><a href="#">İletişim</a></li>
+        <li><a href="contact.html">İletişim</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- HERO BANNER -->
+  <!-- HERO -->
   <section class="hero">
     <div class="overlay"></div>
-    <div class="hero-content">
+    <div class="hero-text">
       <h1>Oyunlarımız</h1>
-      <p class="subtitle">HEXAGES Games tarafından geliştirilen projeler</p>
+      <p>HEXAGES Games tarafından geliştirilen projeler</p>
     </div>
   </section>
 
-  <!-- OYUNLAR -->
-  <section class="games-list">
-    <!-- OYUN 1 -->
-    <div class="game-card" onclick="toggleDetails(this)">
+  <!-- GAMES LIST -->
+  <section class="games">
+
+    <!-- GAME CARD 1 -->
+    <div class="game-card">
       <div class="game-header">
-        <span class="status"><a href="news.html">Geliştirme Aşamasında</a></span>
-        <h2>HEL System</h2>
+        <span class="status">IN DEVELOPMENT</span>
+        <h2>HelF System</h2>
       </div>
-      <img src="oyun1.jpg" alt="HEL System">
-      <div class="game-details">
-        <div class="game-left">
-          <img src="oyun1.jpg" alt="HEL System Küçük">
+      <img src="oyun1.jpg" alt="HelF System">
+      <p class="short-desc">
+        An innovative AI-powered adventure where players control robotic characters in a dynamic world.
+      </p>
+      <button onclick="openModal('hel-system')">View Details</button>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal-hel-system" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('hel-system')">&times;</span>
+        <h2>HelF System</h2>
+
+        <!-- Trailer -->
+        <div class="trailer">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+          <p class="trailer-desc">HelF System’in fragmanını izleyin: robotik karakterler, yapay zekâ ile savaş ve gizem dolu bir dünya.</p>
         </div>
-        <div class="game-right">
-          <p><strong>Yapımcı:</strong> HEXAGES Games</p>
-          <p><strong>Konusu:</strong> Geleceğin savaş arenasında yapay zekaya karşı hayatta kal.</p>
-          <p><strong>Güncel Durum:</strong> <span id="durum-hel">Devam Ediyor</span></p>
-          <p><strong>Oyun Linki:</strong> <a href="#">Yakında eklenecek</a></p>
+
+        <!-- Game Info -->
+        <div class="modal-info">
+          <div class="features">
+            <h3>Game Features</h3>
+            <ul>
+              <li>AI-powered gameplay mechanics</li>
+              <li>Robotic character customization</li>
+              <li>Dynamic puzzle systems</li>
+              <li>Immersive storyline</li>
+            </ul>
+          </div>
+          <div class="details">
+            <h3>Game Info</h3>
+            <p><strong>Status:</strong> <span class="status">In Development</span></p>
+            <p><strong>Genre:</strong> Adventure · AI · Action</p>
+            <p><strong>Platforms:</strong> PC · Console</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- OYUN 2 (örnek) -->
-    <div class="game-card" onclick="toggleDetails(this)">
-      <div class="game-header">
-        <span class="status"><a href="news.html">Yeni</a></span>
-        <h2>On the Trail of the Great Wolf</h2>
-      </div>
-      <img src="oyun2.jpg" alt="Great Wolf">
-      <div class="game-details">
-        <div class="game-left">
-          <img src="oyun2.jpg" alt="Wolf Küçük">
-        </div>
-        <div class="game-right">
-          <p><strong>Yapımcı:</strong> HEXAGES Games</p>
-          <p><strong>Konusu:</strong> Gizem ve macera dolu bir kurt avı.</p>
-          <p><strong>Güncel Durum:</strong> <span id="durum-wolf">Alpha</span></p>
-          <p><strong>Oyun Linki:</strong> <a href="#">Yakında eklenecek</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GELİŞTİRİCİLER -->
-  <section class="developers">
-    <h2>Geliştiriciler</h2>
-    <div class="dev-grid">
-      <div class="dev-card">
-        <img src="dev1.png" alt="Developer 1">
-        <h4>Ahmet</h4>
-        <p>Game Designer</p>
-      </div>
-      <div class="dev-card">
-        <img src="dev2.png" alt="Developer 2">
-        <h4>Mehmet</h4>
-        <p>Lead Programmer</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FUTURE / FUAR -->
-  <section class="future">
-    <h2>Gelecek Etkinlikler</h2>
-    <p>HEXAGES Games, 2025 yılında düzenlenecek olan Oyun Fuarı’nda yeni projelerini tanıtacak.</p>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-top">
-      <div class="footer-logo">
-        <img src="logo.png" alt="HEXAGES Logo">
-        <span>HEXAGES GAMES</span>
-      </div>
-      <div class="footer-right">
-        <h4>İletişim</h4>
-        <p>📧 hexagesgames@gmail.com</p>
-        <p>📷 Instagram: hexagesgames</p>
-        <p>🐦 X: hexages_games</p>
-      </div>
+    <div class="footer-logo">
+      <img src="logo.png" alt="HEXAGES Logo">
+      <span>HEXAGES GAMES</span>
     </div>
-    <div class="footer-divider"></div>
-    <div class="footer-bottom">
-      © 2025 HEXAGES GAMES - Tüm Hakları Saklıdır
-    </div>
+    <p>© 2025 HEXAGES GAMES - Tüm Hakları Saklıdır</p>
   </footer>
 
+  <!-- JS -->
   <script>
-    // Kartı genişlet / kapat
-    function toggleDetails(card) {
-      card.classList.toggle("expanded");
+    function openModal(id) {
+      document.getElementById("modal-" + id).style.display = "flex";
+    }
+    function closeModal(id) {
+      document.getElementById("modal-" + id).style.display = "none";
     }
   </script>
 
