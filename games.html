@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HEXAGES GAMES | Oyunlar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="HEXAGES Logo">
+      <span>HEXAGES GAMES</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html" class="active">Games</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="news.html">Haberler</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero small-hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Oyunlarımız</h1>
+      <p class="subtitle">HEXAGES Games tarafından geliştirilen projeler</p>
+    </div>
+  </section>
+
+  <!-- OYUNLAR -->
+  <section class="games-list">
+    <div class="game-card" onclick="toggleDetails(this)">
+      <div class="game-header">
+        <span class="status"><a href="news.html">Geliştirme Aşamasında</a></span>
+        <h2>HEL System</h2>
+      </div>
+      <img src="oyun1.jpg" alt="HEL System">
+      <div class="game-details">
+        <div class="game-left">
+          <img src="oyun1.jpg" alt="HEL System Küçük">
+        </div>
+        <div class="game-right">
+          <p><strong>Yapımcı:</strong> HEXAGES Games</p>
+          <p><strong>Konusu:</strong> Geleceğin savaş arenasında yapay zekaya karşı hayatta kal.</p>
+          <p><strong>Güncel Durum:</strong> <span id="durum-hel">Devam Ediyor</span></p>
+          <p><strong>Oyun Linki:</strong> <a href="#">Yakında eklenecek</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GELİŞTİRİCİLER -->
+  <section class="developers">
+    <h2>Geliştiriciler</h2>
+    <div class="dev-grid">
+      <div class="dev-card">
+        <img src="dev1.png" alt="Developer 1">
+        <h4>Ahmet</h4>
+        <p>Game Designer</p>
+      </div>
+      <div class="dev-card">
+        <img src="dev2.png" alt="Developer 2">
+        <h4>Mehmet</h4>
+        <p>Lead Programmer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE / FUAR -->
+  <section class="future">
+    <h2>Gelecek Etkinlikler</h2>
+    <p>HEXAGES Games, 2025 yılında düzenlenecek olan Oyun Fuarı’nda yeni projelerini tanıtacak.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="logo.png" alt="HEXAGES Logo">
+        <span>HEXAGES GAMES</span>
+      </div>
+      <div class="footer-right">
+        <h4>İletişim</h4>
+        <p>📧 hexagesgames@gmail.com</p>
+        <p>📷 Instagram: hexagesgames</p>
+        <p>🐦 X: hexages_games</p>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      © 2025 HEXAGES GAMES - Tüm Hakları Saklıdır
+    </div>
+  </footer>
+
+  <script>
+    // Kartı genişlet / kapat
+    function toggleDetails(card) {
+      card.classList.toggle("expanded");
+    }
+  </script>
+
+</body>
+</html>
