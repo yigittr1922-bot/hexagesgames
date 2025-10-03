@@ -1,111 +1,53 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HEXAGES GAMES | Oyunlar</title>
-  <link rel="stylesheet" href="games.css">
-</head>
-<body>
+<!-- Oyun kartı -->
+<div class="game-card">
+  <div class="game-header">
+    <span class="status">IN DEVELOPMENT</span>
+    <h2>HelF System</h2>
+  </div>
+  <img src="oyun1.jpg" alt="HelF System">
+  <div class="game-body">
+    <p>An AI-powered adventure where players control robotic characters...</p>
+    <button onclick="openModal('hel-system')">View Details</button>
+  </div>
+</div>
 
-  <!-- NAVBAR -->
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="HEXAGES Logo">
-      <span>HEXAGES GAMES</span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="games.html" class="active">Games</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="news.html">Haberler</a></li>
-        <li><a href="contact.html">İletişim</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- Modal (Detay Popup) -->
+<div id="modal-hel-system" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('hel-system')">&times;</span>
+    <h2>HelF System</h2>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h1>Oyunlarımız</h1>
-      <p>HEXAGES Games tarafından geliştirilen projeler</p>
-    </div>
-  </section>
-
-  <!-- GAMES LIST -->
-  <section class="games">
-
-    <!-- GAME CARD 1 -->
-    <div class="game-card">
-      <div class="game-header">
-        <span class="status">IN DEVELOPMENT</span>
-        <h2>HelF System</h2>
-      </div>
+    <div class="modal-images">
       <img src="oyun1.jpg" alt="HelF System">
-      <p class="short-desc">
-        An innovative AI-powered adventure where players control robotic characters in a dynamic world.
-      </p>
-      <button onclick="openModal('hel-system')">View Details</button>
+      <img src="devteam.jpg" alt="Dev Team">
+      <img src="gameplay.jpg" alt="Gameplay">
     </div>
 
-    <!-- MODAL -->
-    <div id="modal-hel-system" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('hel-system')">&times;</span>
-        <h2>HelF System</h2>
-
-        <!-- Trailer -->
-        <div class="trailer">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-          <p class="trailer-desc">HelF System’in fragmanını izleyin: robotik karakterler, yapay zekâ ile savaş ve gizem dolu bir dünya.</p>
-        </div>
-
-        <!-- Game Info -->
-        <div class="modal-info">
-          <div class="features">
-            <h3>Game Features</h3>
-            <ul>
-              <li>AI-powered gameplay mechanics</li>
-              <li>Robotic character customization</li>
-              <li>Dynamic puzzle systems</li>
-              <li>Immersive storyline</li>
-            </ul>
-          </div>
-          <div class="details">
-            <h3>Game Info</h3>
-            <p><strong>Status:</strong> <span class="status">In Development</span></p>
-            <p><strong>Genre:</strong> Adventure · AI · Action</p>
-            <p><strong>Platforms:</strong> PC · Console</p>
-          </div>
-        </div>
+    <div class="modal-info">
+      <div class="features">
+        <h3>Game Features</h3>
+        <ul>
+          <li>AI-powered gameplay mechanics</li>
+          <li>Robotic character customization</li>
+          <li>Dynamic puzzle systems</li>
+          <li>Immersive storyline</li>
+        </ul>
+      </div>
+      <div class="details">
+        <h3>Game Info</h3>
+        <p><strong>Status:</strong> <span class="status">In Development</span></p>
+        <p><strong>Genre:</strong> Adventure · AI · Action</p>
+        <p><strong>Platforms:</strong> PC · Console</p>
       </div>
     </div>
+  </div>
+</div>
 
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-logo">
-      <img src="logo.png" alt="HEXAGES Logo">
-      <span>HEXAGES GAMES</span>
-    </div>
-    <p>© 2025 HEXAGES GAMES - Tüm Hakları Saklıdır</p>
-  </footer>
-
-  <!-- JS -->
-  <script>
-    function openModal(id) {
-      document.getElementById("modal-" + id).style.display = "flex";
-    }
-    function closeModal(id) {
-      document.getElementById("modal-" + id).style.display = "none";
-    }
-  </script>
-
-</body>
-</html>
+<script>
+  function openModal(id) {
+    document.getElementById("modal-" + id).style.display = "flex";
+  }
+  function closeModal(id) {
+    document.getElementById("modal-" + id).style.display = "none";
+  }
+</script>
